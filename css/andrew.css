@@ -1,23 +1,10 @@
 <STYLE TYPE="text/css">
 
-body {
-    background-color: lightblue;
-}
-li {
-    display: inline;
-}
-
-h1.title {
+.title {
     color: black;
-    display: inline-block;
+    display: inline;
     font-family: Courier New;
     text-shadow: 2px 2px grey;
-}
-h1.home {
-    color: black;
-    text-align: right;
-    display: inline-block;
-    font-family: Courier New;
 }
 
 /* TOPNAV CLASS */
@@ -27,28 +14,26 @@ ul.topnav {
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    position: fixed;
 }
 
 /* Style the links inside the list items */
 ul.topnav li a {
-    display: inline-block;
+    display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 4px 8px;
     text-decoration: none;
     transition: 0.3s;
-    font-size: 36px;
+    font-size: 24px;
 }
 /* Change background color of links on hover */
 ul.topnav li a:hover {background-color: #555;}
 
 /* Set active page icon color to green */
-a.active {
+.active {
     background-color: #4CAF50;
     color: white;
 }
-
-/* Hide the list item that contains the link that should open and close the topnav on small screens */
-ul.topnav li.icon {display: none;}
 
 </STYLE>
