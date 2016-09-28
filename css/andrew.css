@@ -1,39 +1,124 @@
-<STYLE TYPE="text/css">
+<style type="text/css" media="screen, print, projection">
 
-.title {
-    color: black;
-    display: inline;
-    font-family: Courier New;
-    text-shadow: 2px 2px grey;
+title {
+}
+
+body, html {
+	color:#000;
+	background:#a7a09a;
+}
+
+h1 {
+        margin:0;
+}
+h2 {
+	margin: auto;
+        font-size: 20px;
+	text-align: center;
+}
+h3 {
+	margin: auto;
+	text-align: left;
+}
+
+#portrait {
+	width: 75%;
+	height: 30%;
+}
+
+#wrap {
+	background:#1a2f2a;
+	font-family: Courier New;
+	background: grey url("../images/background.jpg");
+}
+
+#header {
+	padding:0.5% 1%;
+	background:#ddd;
+}
+
+#nav {
+	padding:0.5% 1%;
+	background:black;
+	position: relative;
+}
+#nav ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+	font-weight: bold;
+}
+#nav li {
+	display:inline;
+	margin:0;
+	padding:0;
+}
+
+#left-sidebar {
+	float:left;
+	width:15%;
+	padding:10px;
+        border-radius: 25px;
+	background:white;
+	position: relative;
+	left: 2%;
+}
+
+#main {
+	float:left;
+	width:50%;
+	padding:1%;
+	background:#CCCCCC;
+	text-align: center;
+        border-radius: 25px;
+	position: relative;
+	left: 7%;
+}
+
+#right-sidebar {
+	float:right;
+	width:15%;
+	padding:1%;
+        border-radius: 25px;
+	background-color:white;
+	position: relative;
+	right: 2%;
+}
+
+#footer {
+	clear:both;
+	padding:0.5% 1%;
+	background:#FFFF00;
+	text-align: center;
+	width: 100%;
+}
+
+#icon-med {
+	font-size: 24px;
 }
 
 /* TOPNAV CLASS */
-ul.topnav {
+div.topnav {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
-    position: fixed;
 }
 
-/* Style the links inside the list items */
-ul.topnav li a {
-    display: block;
-    color: #f2f2f2;
+div.topnav li a {
+    display: inline-block;
+    color: white;
     text-align: center;
-    padding: 4px 8px;
+    padding: 0.5% 1%;
     text-decoration: none;
     transition: 0.3s;
-    font-size: 24px;
+    font-size: 20px;
 }
-/* Change background color of links on hover */
-ul.topnav li a:hover {background-color: #555;}
+div.topnav li a:hover {background-color: #555;}
+#sidebar li a:hover {background-color: white;}
 
-/* Set active page icon color to green */
 .active {
-    background-color: #4CAF50;
-    color: white;
+    background-color: grey;
 }
 
-</STYLE>
+</style>
