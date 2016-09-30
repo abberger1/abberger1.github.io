@@ -1,100 +1,102 @@
 <style type="text/css" media="screen, print, projection">
 
-title {
-}
+#CME_TRADE {}
+#DARBO {}
 
-body, html {
-	color:#000;
-	background:#a7a09a;
+body {
+    color:#000;
+    background:#a7a09a;
 }
 
 h1 {
-        margin:0;
+    margin:0;
+    font-family: Courier New;
 }
 h2 {
-	margin: auto;
-        font-size: 20px;
-	text-align: center;
+    margin: auto;
+    font-size: 20px;
+    text-align: center;
 }
 h3 {
-	margin: auto;
-	text-align: left;
+    margin: auto;
+    text-align: left;
 }
 
 #portrait {
-	width: 75%;
-	height: 30%;
+    width: 75%;
+    height: 30%;
 }
 
 #wrap {
-	background:#1a2f2a;
-	font-family: Courier New;
-	background: grey url("../images/background.jpg");
+    background:#1a2f2a;
+    font-family: Courier New;
+    text-align: center;
 }
 
 #header {
-	padding:0.5% 1%;
-	background:#ddd;
+    padding:0.5% 1%;
+    background:#ddd;
 }
 
+/* NAV ID */
 #nav {
-	padding:0.5% 1%;
-	background:black;
-	position: relative;
+    padding:0.5% 1%;
+    background:black;
+    position: relative;
 }
 #nav ul {
-	margin:0;
-	padding:0;
-	list-style:none;
-	font-weight: bold;
+    margin:0;
+    padding:0;
+    list-style:none;
+    font-weight: bold;
 }
 #nav li {
-	display:inline;
-	margin:0;
-	padding:0;
+    display:inline;
+    margin:0;
+    padding:0;
 }
 
+
 #left-sidebar {
-	float:left;
-	width:15%;
-	padding:10px;
-        border-radius: 25px;
-	background:white;
-	position: relative;
-	left: 2%;
+    float:left;
+    width:15%;
+    padding:10px;
+    border-radius: 25px;
+    background:white;
+    position: relative;
+    left: 4%;
 }
 
 #main {
-	float:left;
-	width:50%;
-	padding:1%;
-	background:#CCCCCC;
-	text-align: center;
-        border-radius: 25px;
-	position: relative;
-	left: 7%;
+    float:left;
+    width:50%;
+    padding:1%;
+    background:#CCCCCC;
+    border-radius: 25px;
+    position: relative;
+    left: 7%;
 }
 
 #right-sidebar {
-	float:right;
-	width:15%;
-	padding:1%;
-        border-radius: 25px;
-	background-color:white;
-	position: relative;
-	right: 2%;
+    float:right;
+    width:15%;
+    padding:1%;
+    border-radius: 25px;
+    background-color:white;
+    position: relative;
+    right: 4%;
+    text-align: left;
 }
 
 #footer {
-	clear:both;
-	padding:0.5% 1%;
-	background:#FFFF00;
-	text-align: center;
-	width: 100%;
+    clear:both;
+    padding:0.5% 1%;
+    background:#FFFF00;
+    width: 100%;
 }
 
 #icon-med {
-	font-size: 24px;
+    font-size: 24px;
 }
 
 /* TOPNAV CLASS */
@@ -102,7 +104,6 @@ div.topnav {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 
 div.topnav li a {
@@ -114,11 +115,56 @@ div.topnav li a {
     transition: 0.3s;
     font-size: 20px;
 }
-div.topnav li a:hover {background-color: #555;}
-#sidebar li a:hover {background-color: white;}
+
+div.topnav li a:hover {
+    background-color: #555;
+}
+#sidebar li a:hover {
+    background-color: white;
+}
 
 .active {
     background-color: grey;
+}
+
+
+
+/* DROPDOWN CLASS */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+li.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 240px;
+    left: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#submenu {
+    z-index: 999;
 }
 
 </style>
